@@ -13,3 +13,31 @@ venv/
 
 # Ignore environment files
 .env
+.env.local
+.env.*  # Ignores all env files except explicitly tracked ones
+*.env
+
+# Ignore logs and temp files
+*.log
+logs/
+debug.log
+nohup.out
+
+# Ignore dependency lock files (optional)
+Pipfile.lock
+poetry.lock
+
+# Ignore database & runtime files (optional)
+*.sqlite3
+*.db
+instance/
+*.pid
+
+# Ignore Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+
+# Ignore VS Code settings (if using VS Code too)
+.vscode/
+
+# Ignore MacOS system files (if working on Mac)
+.DS_Store
